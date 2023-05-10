@@ -48,7 +48,7 @@ fi # [ -f $5 ]
 
 
 # if [[ "$@" == "" ]]; then
-pyinstaller --clean -y --dist ./dist/windows --workpath /tmp $SPEC_FILE
+pyinstaller --clean -y --dist ./dist/windows --workpath /tmp $SPEC_FILE --onefile
 chown -R --reference=. ./dist/windows
 # else
     # sh -c "$@"
